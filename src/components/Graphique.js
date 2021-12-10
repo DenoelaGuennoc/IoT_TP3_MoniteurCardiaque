@@ -17,7 +17,7 @@ function Graphique(props) {
                 height={300}
                 data={listeDatasFormat}
                 margin={{
-                    top: 5,
+                    top: 15,
                     right: 30,
                     left: 20,
                     bottom: 5,
