@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Heartrate from './components/Heartrate';
 
 function App() {
   return (
@@ -9,14 +10,7 @@ function App() {
         <p>
           Bienvenue sur l'interface de votre moniteur cardiaque.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Heartrate/>
       </header>
     </div>
   );
