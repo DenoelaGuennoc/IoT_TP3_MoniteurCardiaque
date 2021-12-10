@@ -5,8 +5,8 @@ function Heartrate(props) {
     var pbBpm = "";
     var description = " ";
 
-    if (data<50 || data>150) {
-        pbBpm = "pbBpm";
+    if (data<60 || data>100) {
+        pbBpm = "bpmDanger";
     }
     else {
         pbBpm ="bpmOk";  
