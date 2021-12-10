@@ -13,7 +13,12 @@ function App() {
         timestamp: new Date().getTime(),
         heartrate: 40 + Math.floor(Math.random() * (200 - 40)),
       };
-      setFC((previous) => [...previous, FC]);
+      setFC((previous) => {
+        if (previous.length > 9) {
+          previous = previous.slice(-9);
+        }
+        return [...previous, FC]
+      });
     }, 4000); //délai d'exécution du callback
   },[]) //Fonction excécutée au lancement de l'application puis rappelée toutes les x secondes par le callback
   let FC = listeFC[listeFC.length -1];
